@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Baca data hasil integrasi
-df_integrasi = pd.read_csv("produk e-commerce.csv")
+df_integrasi = pd.read_csv("data_validation.csv")
 
 # Analisis
 produk_per_kategori = df_integrasi['Category'].value_counts()
@@ -18,6 +18,7 @@ df_analysis = pd.DataFrame({
 df_analysis.to_csv("data_analysis.csv")
 
 print("=== Hasil analisis disimpan di data_analysis.csv ===")
+
 
 
 
